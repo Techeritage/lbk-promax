@@ -1,0 +1,734 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #efefef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+p, span, div {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.view1 {
+  padding: 10px 5%;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  height: max-content;
+  background: url("c.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  flex-basis: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  flex-basis: 20%;
+}
+
+nav .logo img {
+  width: 70px;
+}
+
+nav .menu-lists {
+  flex-basis: 70%;
+}
+
+nav .menu-lists ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.test-grid2{
+  display: none;
+}
+
+nav .menu-lists ul li {
+  padding: 0 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #ff9900;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+nav .menu-lists ul li:hover {
+  opacity: 0.7;
+}
+
+.view1-main {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.content-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h1 {
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 15px;
+  color: white;
+  line-height: 1.4em;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.viewimg {
+  display: none;
+}
+
+.content h1 span {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0 10px;
+  white-space: nowrap;
+  border-radius: 20px 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.content p {
+  color: rgb(223, 223, 223);
+  font-weight: 400;
+}
+
+.content-flex {
+  flex: 1;
+}
+
+.content-img {
+  width: 300px;
+}
+
+.content-img img {
+  width: 100%;
+  transform: rotate(-15deg);
+}
+
+.main-btn {
+  cursor: pointer;
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+
+.main-btn button {
+  white-space: nowrap;
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  background-color: #ff9900;
+  color: white;
+  font-weight: 500;
+  transition: transform 0.3s;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+} 
+
+.main-btn button:hover {
+  transform: scale(1.1);
+}
+
+.view2 {
+  padding: 30px 5% 50px;
+}
+
+.view2 h2, .view3 h2, .view4 h2 {
+  text-align: center;
+  margin-bottom: 70px;
+  color: #000000e0;
+  font-weight: 600;
+}
+
+.h2-bb {
+  width: 100px;
+  height: 5px;
+  background: #000000da;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.ben-icon {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.bi-a {
+  background-color: #6EB5E1;
+}
+
+.bi-b {
+  background-color: #F1C40F;
+}
+
+.bi-c {
+  background-color: #FF6B6B;
+}
+
+.bi-d {
+  background-color: #5BAF82;
+}
+
+.bi-e {
+  background-color: #D5DBDB;
+}
+
+.bi-f {
+  background-color: #FFD700;
+}
+
+.ben-icon ion-icon {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 7px 10px;
+}
+.benefit-card {
+  position: relative;
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 20px;
+  max-width: 300px;
+  box-shadow: 0px 0px 10px rgba(211, 207, 207, 0.349);
+}
+
+.benefit-card h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgba(29, 29, 29, 0.918);
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  color: rgba(0, 0, 0, 0.63);
+  text-align: center;
+  
+}
+
+.view3 {
+  background: #313131;
+  color: white;
+  padding: 30px 5% 50px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-top: 20px;
+}
+
+.view3 .h2-bb {
+  background-color: #ff9900;
+}
+
+.view3 h2 {
+  color: white;
+}
+
+.test-grid2 {
+  display: none;
+}
+
+.test-grid {
+  display: flex;
+  align-items: center;
+}
+
+.test-cont, .test-cont-a {
+  flex: 1;
+  display: flex;
+  align-items: end;
+  height: 220px;
+}
+
+.test-cont {
+  margin-right: -5px;
+}
+
+.test-cont-a {
+  margin-left: -10px;
+}
+
+.test-cont-s {
+  flex: 1;
+  display: flex;
+  align-items: start;
+  z-index: 1;
+  width: auto;
+  height: 220px;
+}
+
+.test-inner-s {
+  background-color: #ff9900;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 200px;
+  padding: 20px 20px 40px;
+}
+
+.test-inner-s p {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.test-inner-s .p {
+  color: rgb(77, 77, 77);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.test-inner, .test-inner-a {
+  flex: 1;
+  width: auto;
+  height: 200px;
+  padding: 20px 20px 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.test-inner p, .test-inner-a p {
+  color: rgb(36, 36, 36);
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 4px;
+  width: 200px;
+}
+
+.test-inner .p, .test-inner-a .p {
+  color: rgb(77, 77, 77);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.test-inner img, .test-inner-a img, .test-inner-s img {
+  width: 70px;
+}
+
+.view4 {
+  padding: 30px 5% 50px;
+  margin-top: 20px;
+}
+
+.sc-view4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sc-logo ion-icon {
+  font-size: 22px;
+  margin: 2px 0;
+}
+
+.sc-logo ion-icon.fbi {
+  color: #1877F2;
+  border-radius: 50%;
+  font-size: 32px;
+}
+
+.ini {
+  color: #fff;
+  background: linear-gradient(135deg, #F58529, #DD2A7B);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.whi {
+  background: #25D366;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.sc-logo, .whii {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whii p {
+  margin: 0;
+  padding-left: 5px;
+}
+
+.fiw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.fiw .ion {
+  display: flex;
+  column-gap: 10px;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bt-sc-icon {
+  margin: 20px 0;
+  width: max-content;
+}
+
+.bt-sc-icon a { 
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.bt-sc-icon ion-icon {
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.205);
+  color: #ff9900;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.scon h4 {
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.btsc {
+  padding: 0 10px 30px 10px;
+}
+
+.scon p {
+  font-size: 14px;
+  margin: 0;
+  color: rgba(82, 82, 82, 0.822);
+}
+
+footer {
+  background-image: url("c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 5%;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+}
+
+@media (max-width:600px) {
+  .main-btn {
+   margin: 20px 20px 10px;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefit-card h4 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .benefit-card p {
+    font-size: 12px;
+  }
+
+  .content {
+    margin-bottom: 70px;
+  }
+
+  .content h1 {
+    font-size: 20px;
+    width: 300px;
+    word-wrap:break-word;
+  }
+
+  .content p {
+    width: 180px;
+    word-wrap: break-word;
+    padding: 0 10px;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .view2 h2, .view3 h2, .view4 h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .view2 .h2-bb {
+    background-color: rgba(0, 0, 0, 0.801);
+  }
+
+  .content-img {
+    display: none;
+  }
+
+  .viewimg {
+    display: block;
+    position: absolute;
+    width: 170px;
+    transform: rotate(-8deg);
+    right: -50%;
+    bottom: -20px;
+    transition: right 1s ease-in-out;
+  }
+
+  .viewimg.active {
+    right: 20px;
+  }
+
+  .view1 {
+    height: max-content;
+    position: relative;
+  }
+
+  .view1-main {
+    margin-top: 30px;
+  }
+
+  .main-btn button{
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+  .benefit-card {
+    padding: 40px 10px 20px;
+  }
+
+  .view2 h2{
+    margin-bottom: 60px;
+  }
+
+  .view4 h2 {
+    margin-bottom: 40px;
+  }
+
+  .view3 h2 {
+    margin-bottom: 20px;
+  }
+
+  .test-grid2 {
+    display: block;
+  }
+  
+  .test-inner1-s {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 200px;
+    padding: 20px 20px 40px;
+  }
+  
+  .test-inner1-s p {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    width: 170px;
+  }
+  
+  .test-inner1-s .p {
+    color: rgb(173, 173, 173);
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .test-inner1, .test-inner1-a {
+    width: auto;
+    height: 200px;
+    padding: 20px 20px 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .test-inner1 p, .test-inner1-a p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 4px;
+    width: 170px;
+  }
+  
+  .test-inner1 .p, .test-inner1-a .p {
+    color: rgb(173, 173, 173);
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .test-inner1 img, .test-inner1-a img, .test-inner1-s img {
+    width: 50px;
+  }
+
+  .test-grid {
+    display: none;
+  }
+
+  .view3 {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 30px 0 0;
+  }
+
+  .view3 h2 {
+    color: #ff9900;
+  }
+
+  .view3 .h2-bb {
+    background-color: rgb(168, 168, 168);
+  }
+
+  .h2-bb {
+    width: 70px;
+    height: 3px;
+  }
+
+  .contact-flex {
+    justify-content: start;
+  }
+
+  .btsc {
+    padding: 0 10px 30px 30px;
+  }
+  
+  .bt-sc-icon ion-icon {
+    font-size: 22px;
+  }
+
+  .fiw p {
+    margin: 0;
+    font-size: 12px;
+    color: #000000af;
+  }
+
+  .scon h4 {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .scon p {
+    margin: 0;
+    color: rgba(82, 82, 82, 0.822);
+  }
+
+  .view4 {
+    padding: 30px 0 50px;
+    margin-top: 20px;
+  }
+  
+  .sc-view4 {
+    width: 40px;
+  }
+
+  .sc-logo ion-icon {
+    font-size: 20px;
+  }
+
+  .whii p {
+   font-size: 14px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+}
+
+@media (max-width:395px) {
+  
+  .viewimg {
+    width: 150px;
+  }
+
+  .viewimg.active {
+    right: 15px;
+  }
+
+  .main-btn {
+    margin-top: 20px;
+  }
+
+  .view1-main {
+    margin-top: 30px;
+  }
+
+  .benefit-card p {
+    line-height: 17px;
+  }
+
+  .content {
+    margin-bottom: 45px;
+  }
+}
