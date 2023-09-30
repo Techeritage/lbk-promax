@@ -8,4 +8,4 @@ const image = document.querySelector('.viewimg');
 
 setTimeout(() => {
   image.classList.add('active')
-}, 2000);
+}, 1000);
