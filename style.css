@@ -471,6 +471,15 @@ footer p {
   color: #fff;
 }
 
+.footp {
+  color: #ffffffdb;
+  margin-top: 2px;
+}
+
+.footp a {
+  color: #ff9900;
+}
+
 @media (max-width:600px) {
   .main-btn {
    margin: 20px 20px 10px;
