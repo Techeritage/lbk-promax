@@ -11,8 +11,7 @@ setTimeout(() => {
 }, 1500);
 
 //copyright date function
-const yearDisplay = document.getElementId("year");
 const date = new Date();
-const year = date.getFullYear():
+const year = date.getFullYear();
 
-yearDisplay.innerHTML = year;
+document.getElementById("year").textContent = year;
