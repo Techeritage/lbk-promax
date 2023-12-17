@@ -18,6 +18,17 @@ p, span, div {
   font-weight: 400;
 }
 
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+}
+
+section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .view1 {
   padding: 10px 5%;
   display: flex;
